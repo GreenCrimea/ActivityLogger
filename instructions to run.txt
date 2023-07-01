@@ -1,0 +1,52 @@
+instructions to run using exp1.csv under optimal circumstances
+
+IF IT HANGS, MOST LIKELY ITS THE EXPORT GRAPHICS FUNCTIONS AT THE END OF EVERY PLOT.
+SOMETIMES THE RENDER ENGINE RANDOMLY SHITS ITSELF, NO IDEA WHY OR HOW TO FIX.
+JUST COMMENT OUT ANY LINES CONTAINING "exportgraphics()" FUNCTIONS.
+
+SMOOTH_K = [750, 250]
+THRESHOLDS = [0.1, 0.6]
+THESE ARE IDEAL PARAMS TO GET 90% ACCURACY WITH exp1.csv
+
+IDEAL TRUNK AND LABEL INPUTS:
+
+Input the path to the accelerometer dataset: 
+exp1.csv
+Would you like to truncate dataset? 1 = Yes, 0 = No :
+1
+Input amount to remove off the beginning of the dataset in seconds (use decimals if neccesary): 
+8
+Input amount to remove off the end of the dataset in seconds (use decimals if neccesary): 
+9
+Would you like to truncate dataset? 1 = Yes, 0 = No :
+0
+Would you like to start again, 1 = Yes, 0 = No :
+0
+Would you like to add labels to the data? 1 = Yes, 0 = No :
+1
+Input the start of the range in seconds :
+0
+Input the end of the range in seconds :
+5
+Input what label, 1=sit, 2=stand, 3=walk :
+1
+are the labels complete? 1 = Yes, 0 = No :
+0
+Input the start of the range in seconds :
+5
+Input the end of the range in seconds :
+10
+Input what label, 1=sit, 2=stand, 3=walk :
+2
+are the labels complete? 1 = Yes, 0 = No :
+0
+Input the start of the range in seconds :
+10
+Input the end of the range in seconds :
+17
+Input what label, 1=sit, 2=stand, 3=walk :
+3
+are the labels complete? 1 = Yes, 0 = No :
+1
+
+IDEAL RANGE FOR predict_in_range() = 6-10s
